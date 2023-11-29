@@ -14,4 +14,10 @@ public class Calculator {
     public static boolean isPositive(int number) {
         return number > 0;
     }
+
+    public static String upperCase( String text){
+
+        return text.toUpperCase();
+    }
+
 }

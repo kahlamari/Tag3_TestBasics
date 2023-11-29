@@ -55,6 +55,20 @@ class CalculatorTest {
 
 
     @Test
+    public  void  upperCaseTest_whenHello_thenHELLO(){
+
+        // GIVEN
+        String value = "Hello";
+
+        //WHEN
+        String string = Calculator.upperCase(value);
+
+        // THEN
+        assertEquals("HELLO", string);
+    }
+
+
+    @Test
     void isPositiveTest_when1_thenTrue() {
         // GIVEN
         int value = 1;
