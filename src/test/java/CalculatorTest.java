@@ -17,4 +17,26 @@ class CalculatorTest {
         assertEquals(6, actual);
     }
 
+    @Test
+    void isPositive_when1_thenTrue() {
+        // GIVEN
+        int value = 1;
+
+        // WHEN
+        boolean actual = Calculator.isPositive(value);
+
+        // THEN
+        assertTrue(actual);
+    }
+    @Test
+    void isPositive_when0_thenFalse() {
+        // GIVEN
+        int value = 0;
+
+        // WHEN
+        boolean actual = Calculator.isPositive(value);
+
+        // THEN
+        assertFalse(actual);
+    }
 }
