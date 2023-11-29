@@ -3,6 +3,10 @@ public class Calculator {
         return numberA + numberB;
     }
 
+    public static boolean isEven(int num){
+        return num % 2 == 0;
+    }
+
     public static boolean isPositive(int number) {
         return number > 0;
     }

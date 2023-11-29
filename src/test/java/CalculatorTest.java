@@ -18,6 +18,30 @@ class CalculatorTest {
     }
 
     @Test
+    public void isEvenTest_when2_then_true(){
+        //given
+        int number = 2;
+
+        //when
+        boolean actual = Calculator.isEven(number);
+
+        //then
+        assertTrue(actual);
+    }
+    @Test
+    public void isEvenTest_when3_then_false(){
+        //given
+        int number = 3;
+
+        //when
+        boolean actual = Calculator.isEven(number);
+
+        //then
+        assertFalse(actual);
+    }
+
+
+    @Test
     void isPositive_when1_thenTrue() {
         // GIVEN
         int value = 1;
