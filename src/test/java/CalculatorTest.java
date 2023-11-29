@@ -18,6 +18,19 @@ class CalculatorTest {
     }
 
     @Test
+    public void mulTest_when3And7_then21() {
+        //GIVEN
+        int valueA = 3;
+        int valueB = 7;
+
+        //WHEN
+        int actual = Calculator.mul(valueA, valueB);
+
+        //THEN
+        assertEquals(21, actual);
+    }
+
+    @Test
     public void isEvenTest_when2_then_true(){
         //given
         int number = 2;
