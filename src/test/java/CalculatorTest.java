@@ -55,7 +55,7 @@ class CalculatorTest {
 
 
     @Test
-    void isPositive_when1_thenTrue() {
+    void isPositiveTest_when1_thenTrue() {
         // GIVEN
         int value = 1;
 
@@ -66,7 +66,7 @@ class CalculatorTest {
         assertTrue(actual);
     }
     @Test
-    void isPositive_when0_thenFalse() {
+    void isPositiveTest_when0_thenFalse() {
         // GIVEN
         int value = 0;
 
