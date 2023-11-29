@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
@@ -15,6 +14,19 @@ class CalculatorTest {
 
         //THEN
         assertEquals(6, actual);
+    }
+
+    @Test
+    public void mulTest_when3And7_then21() {
+        //GIVEN
+        int valueA = 3;
+        int valueB = 7;
+
+        //WHEN
+        int actual = Calculator.mul(valueA, valueB);
+
+        //THEN
+        assertEquals(21, actual);
     }
 
 }
